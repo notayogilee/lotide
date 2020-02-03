@@ -10,3 +10,4 @@ const assertEqual = function(actual, expected) {
 
 assertEqual('Bootcamp', 'Bootcamp');
 assertEqual(1, 7);
+assertEqual(1, 1);
