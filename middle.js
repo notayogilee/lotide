@@ -9,25 +9,27 @@ const eqArrays = function(arr1, arr2) {
   return actual;
 };
 
-const assertArraysEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`😄 Assertion Passed! This was the expected outcome! `);
+const assertArraysEqual = function(arr1, arr2, expected) {
+  if (eqArrays(arr1, arr2)) {
+    console.log(`😄 Assertion Passed:  ${arr1} === ${arr2}`);
   } else {
-    console.log(`🙁 Assertion Failed: This was not the expected outcome!`);
+    console.log(`🙁 Assertion Failed: ${arr1} !== ${arr2}`);
   }
 };
 
 const middle = function(array) {
   middleOfArray = [];
   if (array.length % 2 === 0) {
-    middleOfArray.push(array[array.length / 2]);
     middleOfArray.push(array[array.length / 2 - 1]);
+    middleOfArray.push(array[array.length / 2]);
   } else {
     middleOfArray.push(array[Math.floor(array.length / 2)]);
   }
-  console.log(middleOfArray);
+  return middleOfArray;
 };
 
 middle([1, 2, 31, 4, 5]);
-// assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+middle([21, 3, 31, 6]);
+assertArraysEqual(middle([1, 2, 31, 4, 5]), [31], true); // => should PASS
+assertArraysEqual(middle([21, 3, 31, 6]), [3, 31], true);
 // eqArrays([1, 2, 3], [1, 2, 3]);
