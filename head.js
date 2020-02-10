@@ -4,6 +4,6 @@ const head = function (actual) {
   return actual[0];
 };
 
-
-console.log(assertEqual(head([]), 7));
-console.log(assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"));
+module.exports = head;
+// console.log(assertEqual(head([]), 7));
+// console.log(assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"));

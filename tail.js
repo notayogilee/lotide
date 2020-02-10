@@ -1,4 +1,6 @@
-const tail = function(input) {
+const assertEqual = require('./assertEqual');
+
+const tail = function (input) {
   let newTail = [];
   for (let i = 1; i < input.length; i++) {
     newTail.push(input[i]);
@@ -8,12 +10,12 @@ const tail = function(input) {
 
 
 
-const assertEqual = function(actual, expected) {
+// const assertEqual = function(actual, expected) {
 
-  if (actual === expected) {
-    console.log(`😄 Assertion Passed:  ${actual} === ${expected}`);
-  } else {
-    console.log(`🙁 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+//   if (actual === expected) {
+//     console.log(`😄 Assertion Passed:  ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🙁 Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
 

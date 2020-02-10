@@ -7,4 +7,7 @@ const assertEqual = require('../assertEqual');
 //     return `🙁 Assertion Failed: ${actual} !== ${expected}`;
 //   }
 // };
+
+console.log(assertEqual("Lighthouse Labs", "Bootcamp"));
+console.log(assertEqual(1, 1));
 module.exports = assertEqual;
