@@ -1,4 +1,6 @@
-const eqArrays = function(arr1, arr2) {
+
+
+const eqArrays = function (arr1, arr2) {
   let actual = true;
 
   for (let i = 0; i < arr2.length; i++) {
@@ -9,7 +11,7 @@ const eqArrays = function(arr1, arr2) {
   return actual;
 };
 
-const assertArraysEqual = function(arr1, arr2, expected) {
+const assertArraysEqual = function (arr1, arr2, expected) {
   if (eqArrays(arr1, arr2)) {
     console.log(`😄 Assertion Passed:  ${arr1} === ${arr2}`);
   } else {
@@ -19,7 +21,7 @@ const assertArraysEqual = function(arr1, arr2, expected) {
 
 const words = ["ground", "control", "to", "major", "tom"];
 
-const map = function(array, callback) {
+const map = function (array, callback) {
   const results = [];
   for (let item of array) {
     results.push(callback(item));
@@ -28,6 +30,8 @@ const map = function(array, callback) {
 };
 
 const results1 = map(words, word => word[0]);
+
+module.exports = map;
 
 console.log(results1);
 assertArraysEqual(results1, ["g", "c", "t", "m", "t"], true);
