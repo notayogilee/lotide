@@ -26,4 +26,4 @@ const assertArraysEqual = function (arr1, arr2, expected) {
 
 module.exports = assertArraysEqual;
 
-console.log(assertArraysEqual([1, 2, 3, 4], [1, 2, 3], false)); // => should PASS
+// console.log(assertArraysEqual([1, 2, 3, 4], [1, 2, 3], false)); // => should PASS
