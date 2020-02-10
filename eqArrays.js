@@ -1,19 +1,19 @@
 
 
-const eqArrays = function (arr1, arr2, expected) {
+const eqArrays = function (arr1, arr2) {
   let actual = true;
 
   if (arr1.length !== arr2.length) {
     actual = false;
-  } else {
-    for (let i = 0; i < arr2.length; i++) {
-      if (arr2[i] !== arr1[i]) {
-        actual = false;
-      }
-    }
-    return actual;
-    // console.log(actual);
   }
+  // } else {
+  for (let i = 0; i < arr2.length; i++) {
+    if (arr2[i] !== arr1[i]) {
+      actual = false;
+    }
+  }
+  return actual;
+  // console.log(actual);
 };
 module.exports = eqArrays;
 
