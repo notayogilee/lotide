@@ -15,12 +15,14 @@ const eqArrays = require('./eqArrays');
 // };
 
 const assertArraysEqual = function (arr1, arr2, expected) {
-  if (eqArrays(arr1, arr2) === expected) {
+  let actual = eqArrays(arr1, arr2);
+  if (actual === expected) {
 
-
-    return `😄 Assertion Passed: Outcome expected `;
+    console.log(`😄 Assertion Passed: Outcome expected `);
+    return actual;
   } else {
-    return `🙁 Assertion Failed: Outcome not expected `;
+    console.log(`🙁 Assertion Failed: Outcome not expected `);
+    return actual;
   }
 };
 
