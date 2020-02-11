@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@notayogilee/lotide",
   "version": "1.0.0",
-  "description": "lhl project",
+  "description": "lhl project - mini clone of the ([Lodash] https://lodash.com)  library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/notayogilee/lotide.git"
   },
-  "author": "",
+  "author": "Lee Castelani @notayogilee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/notayogilee/lotide/issues"
