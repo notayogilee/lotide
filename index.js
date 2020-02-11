@@ -8,21 +8,8 @@ const findKeyByValue = require('./findKeyByValue');
 const findKey = require('./findkey');
 const countOnly = require('./countOnly');
 const countLetters = require('./countLetters');
-
-
-
-// module.exports = {
-//   head: head,
-//   tail: tail,
-//   middle: middle,
-//   map: map,
-//   letterPositions: letterPositions,
-//   flatten: flatten,
-//   findKeyByValue: findKeyByValue,
-//   findKey: findKey,
-//   countOnly: countOnly,
-//   countLetters: countLetters
-// };
+const takeUntil = require('./takeUntil');
+const without = require('./without');
 
 module.exports = {
   head,
@@ -34,5 +21,7 @@ module.exports = {
   findKeyByValue,
   findKey,
   countOnly,
-  countLetters
+  countLetters,
+  takeUntil,
+  without
 };
